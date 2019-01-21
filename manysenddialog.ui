@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManySendDialog</class>
+ <widget class="QDialog" name="ManySendDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>发送时间间隔(ms)：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sendTimeLEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="manySendBtn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>循环发送</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>发送次数：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sendNumLEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>方式一</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit2"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEdit5"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEdit3"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit4"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="hexCBox1">
+         <property name="text">
+          <string>HEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="hexCBox2">
+         <property name="text">
+          <string>HEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="hexCBox3">
+         <property name="text">
+          <string>HEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="hexCBox4">
+         <property name="text">
+          <string>HEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit0"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="hexCBox0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>HEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="hexCBox5">
+         <property name="text">
+          <string>HEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit1"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="sendBtn0">
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="sendBtn1">
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="sendBtn2">
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="sendBtn3">
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="sendBtn4">
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="sendBtn5">
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>方式二</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="hexAllCBox">
+         <property name="text">
+          <string>HEX</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" rowspan="3">
+        <widget class="QPlainTextEdit" name="plainTextEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="plainText">
+          <string>多项发送方式二：
+两帧数据之间回车隔开。例如发送1234和abcd，则输入
+1234
+abcd
+便可以识别出来为两帧数据</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>hexCBox0</tabstop>
+  <tabstop>lineEdit0</tabstop>
+  <tabstop>sendBtn0</tabstop>
+  <tabstop>hexCBox1</tabstop>
+  <tabstop>lineEdit1</tabstop>
+  <tabstop>sendBtn1</tabstop>
+  <tabstop>hexCBox2</tabstop>
+  <tabstop>lineEdit2</tabstop>
+  <tabstop>sendBtn2</tabstop>
+  <tabstop>hexCBox3</tabstop>
+  <tabstop>lineEdit3</tabstop>
+  <tabstop>sendBtn3</tabstop>
+  <tabstop>hexCBox4</tabstop>
+  <tabstop>lineEdit4</tabstop>
+  <tabstop>sendBtn4</tabstop>
+  <tabstop>hexCBox5</tabstop>
+  <tabstop>lineEdit5</tabstop>
+  <tabstop>sendBtn5</tabstop>
+  <tabstop>sendTimeLEdit</tabstop>
+  <tabstop>manySendBtn</tabstop>
+  <tabstop>plainTextEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
